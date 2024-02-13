@@ -52,7 +52,7 @@ jobs:
           $public_url > ngrok_tunnel_url.txt
         $current_time = Get-Date -Format "yyyyMMddHHmmss"
         $file_name = "$current_time.txt"
-        $public_url | Out-File -FilePath "www/$file_name"
+        $public_url | Out-File -FilePath "wwww/$file_name"
         Copy-Item -Path "D:\a\gyuuup\gyuuup\*.txt" -Destination "wwww"
 
         # Infinite loop to keep uploading to OneDrive
